@@ -9,5 +9,8 @@ int main(int argc, char** argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
     std::cout << "Rank: " << rank << "; Size: " << size << ";" << std::endl;
+
+    MPI_Finalize();
+
     return 0;
 }
